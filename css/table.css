@@ -1,0 +1,25 @@
+.student_tbl{
+/* border:black; */
+width: 100%;
+border-color: brown;
+border-collapse: collapse;
+}
+.head{
+    background-color:grey ;
+}
+.head:hover{
+    background-color: hotpink;
+}
+.rows:nth-child(even){
+    background-color: darkblue;
+}
+.rows:hover:nth-child(odd){
+    background-color: darkcyan;
+}
+
+/* tr{
+    background-color:blue;
+}
+tr:hover{
+    background-color:cadetblue;
+} */

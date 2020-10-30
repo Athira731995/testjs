@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //literals
+        test()
+        console.log(display)
+        console.log(z)
+        let a=100;
+        var x="hello";
+        let s=String("hello")//using a function
+        let i=Number(1234)
+        let s1="123"
+        //typecasting
+        let j=parseInt(s1)
+        let s2="100.34"
+        let j2=parseFloat(s2)
+        let k=12345567;
+        var z=0;
+        let str=k.toString()
+        console.log(str,typeof str)
+        console.log(j2,typeof j2)
+        console.log(j,typeof j)
+        console.log(x,typeof x)
+        console.log(s,typeof s)
+        //function expression
+        var display=function(){
+            console.log("display function")
+        }
+        //function declaraion
+        function test(){
+            console.log("test function")
+        }
+        display()
+
+        var str1=new String(" this is a sample t string ")
+        console.log(str1)
+        console.log(typeof str1)
+        console.log(str1.length)
+        console.log(str1.toUpperCase())
+        console.log(str1.length)
+        console.log(str1.trim(),str1.trim().length)
+        console.log(str1.indexOf('t'))
+        console.log(str1.lastIndexOf('t'))
+        console.log(str1.indexOf('t',2))
+        console.log(str1.charAt(3))
+        console.log(str1.substring(3))
+        console.log(str1.substring(3,5))
+        console.log(str1.startsWith("this"))
+        console.log(str1.endsWith("string "))
+        let i$=new Number(123)
+        console.log(i$,typeof i$)
+        let b=new Boolean(true)
+        console.log(b)
+        
+        
+
+    
+
+
+
+
+
+
+    </script>
+
+
+    <p id=p1>this is a sample paragraph</p>
+    <button onclick="changeContent()">
+    Change</button>
+    <script src="js/script1.js"></script>
+    <input type="text" id="username" onblur="getContent()" >
+<select name="" id="colors" onchange="getChosenData()" >
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+    </select>
+    <input type="text" id="color" >
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div onclick="changeImage()" id=img1>
+        <img src="../images/images.jpg" alt="">
+    </div>
+    <div style="display: none;" id=img2 onclick="flipImage()">
+        <img src="../images/logo2.png" alt="">
+
+    </div>
+    <script>
+        function changeImage(){
+            document.getElementById("img1").style.display="none";
+            document.getElementById("img2").style.display="block";
+            
+        }
+        function flipImage(){
+            document.getElementById("img2").style.display="none";
+            document.getElementById("img1").style.display="block";
+            
+        }
+
+
+    </script>
+</body>
+</html>

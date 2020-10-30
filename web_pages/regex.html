@@ -22,6 +22,43 @@
     let newcontent=text.replace(regex_,"<span style='background-color:yellow'>"+word+"</span>")
     document.getElementById("highlight").innerHTML=newcontent   
 }
+let stmt="hi hello,how are You"
+let words=stmt.split(" ")
+console.table(words)
+let obj={}
+console.log(obj,typeof obj)
+let employee={name:"Raj",age:25,salary:50000,updateSalary:function(amount){
+    this.salary+=amount
+    console.log("updated salary ",this.salary)
+}}
+console.log(employee)
+employee.name="Raj T"
+employee.eid="101"
+console.log(employee)
+console.log(employee.salary)
+employee.updateSalary(5000)
+employee.display=function(){
+    console.log(`Name : ${this.name}`)
+    console.log(`Age : ${this.age}`)
+    console.log(`salary : ${this.salary}`)
+}
+employee.display()
+
+student={name:"Rachel",age:30,rollno:12,marks:[80,85,90],average:function(){
+let sum=0
+for(let mark of this.marks){
+    sum+=mark
+
+}
+return sum/this.marks.length
+    
+}}
+
+console.log("Avg =",student.average())
+console.log(student["name"])
+console.log(student["age"])
+
+
 </script>    
 </body>
 </html>
